@@ -18,6 +18,12 @@ class TaskManager {
     this.initializeUI();
     this.setupEventListeners();
     this.loadDataFromStorage();
+    // Real-time sync: listen for storage changes from other views
+    window.addEventListener("storage", (event) => {
+      if (event.key === "silvia_extention_data") {
+        this.loadDataFromStorage();
+      }
+    });
   }
 
   initializeUI() {
@@ -58,7 +64,7 @@ class TaskManager {
       this.taskManagerApp
     );
     this.notes = createElement("input", "notes", "", this.notesContainer);
-    this.notes.type = "text";
+    this.notes.type = "text-area";
     this.notes.placeholder = "Add quick notes here";
     this.createTaskForm();
   }
