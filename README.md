@@ -67,7 +67,7 @@ Creative Commons. See [LICENSE](LICENSE).
 **Your Name**
 
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/claudemalot)
-- Email: your.email@example.com
+- Email: claude.malot@creativeori.com
 
 ## 🙏 Acknowledgments
 
